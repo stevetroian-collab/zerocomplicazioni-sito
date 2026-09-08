@@ -1,3 +1,26 @@
+/* Poppins self-hosted — niente più chiamate a fonts.googleapis.com / fonts.gstatic.com */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("fonts/poppins-300.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fonts/poppins-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/poppins-600.woff2") format("woff2");
+}
+
 :root {
   --coral: #F27F6B;
   --terracotta: #B14A2E; /* testo corallo su sfondo chiaro (WCAG AA). Nel lockup simbolo+wordmark: mattone insieme su sfondo chiaro, corallo insieme su sfondo scuro — mai affiancati. Corallo isolato resta su bottoni/badge/superfici */
