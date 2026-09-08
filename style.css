@@ -193,3 +193,15 @@ h1 { font-size: clamp(32px, 6vw, 44px); letter-spacing: -0.01em; margin-bottom: 
 .footer-mark svg { width: 100%; height: 100%; }
 .footer-text { font-size: 12.5px; color: var(--muted); max-width: 420px; }
 .footer-email { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--coral); }
+.footer-link { font-size: 12px; color: var(--muted); text-decoration: underline; }
+.footer-link:hover { color: var(--ink); }
+
+/* ---------- Legal (privacy) ---------- */
+.legal-content { max-width: 720px; }
+.legal-content h2 { font-size: 18px; margin: 40px 0 14px; }
+.legal-content h2:first-child { margin-top: 0; }
+.legal-content p { font-size: 14.5px; color: var(--ink); line-height: 1.7; margin-bottom: 14px; }
+.legal-content ul { margin: 0 0 14px; padding-left: 20px; }
+.legal-content li { font-size: 14.5px; color: var(--ink); line-height: 1.7; margin-bottom: 10px; }
+.legal-content a { color: var(--terracotta); text-decoration: underline; }
+.legal-updated { font-size: 13px; color: var(--muted); }
