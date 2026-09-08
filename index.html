@@ -3,91 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZeroComplicazioni</title>
-<meta name="description" content="ZeroComplicazioni — strumenti e consulenza per ristoranti, pizzerie e attività di ristorazione. Ordini online, processi, food cost.">
+<title>ZeroComplicazioni — strumenti e consulenza per asporto e consegna</title>
+<meta name="description" content="Togliamo complicazioni a chi gestisce un locale. Ordini online, consulenza operativa e food cost per ristoranti, pizzerie e attività con asporto e consegna.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="ZeroComplicazioni">
-<meta property="og:description" content="Strumenti e consulenza per chi lavora con asporto e consegna.">
-<meta property="og:type" content="website">
 <link rel="icon" href="favicon.ico" sizes="any">
-<style>
-  :root{
-    --ink:#1E1E1E;
-    --coral:#F27F6B;
-    --cream:#FDF0D4;
-    --muted:#6B6660;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:var(--cream);
-    color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    padding:32px 24px;
-    text-align:center;
-  }
-  .wrap{max-width:520px}
-  .mark{width:88px;height:88px;margin:0 auto 32px;display:block}
-  h1{
-    font-size:clamp(28px,7vw,42px);
-    font-weight:700;
-    letter-spacing:-0.02em;
-    margin-bottom:18px;
-  }
-  h1 .zero{color:var(--coral)}
-  p.lead{
-    font-size:clamp(15px,4vw,18px);
-    line-height:1.6;
-    color:var(--muted);
-    margin-bottom:34px;
-  }
-  .soon{
-    display:inline-block;
-    font-size:13px;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    color:var(--coral);
-    border:1.5px solid var(--coral);
-    border-radius:999px;
-    padding:9px 20px;
-    margin-bottom:34px;
-  }
-  .contact{font-size:15px;color:var(--muted)}
-  .contact a{color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--coral)}
-  .contact a:hover{color:var(--coral)}
-  footer{
-    margin-top:48px;
-    font-size:12px;
-    color:#A39C92;
-  }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
 
-    <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZeroComplicazioni">
-      <path d="M 73.641 87.109 A 44 44 0 1 1 93.958 51.919 L 75.975 51.134 A 26 26 0 1 0 63.970 71.928 Z" fill="#F27F6B"/>
-    </svg>
-
-    <h1><span class="zero">Zero</span>Complicazioni</h1>
-
-    <p class="lead">
-      Strumenti e consulenza per ristoranti, pizzerie e attività
-      che lavorano con asporto e consegna.
-    </p>
-
-    <div class="soon">Sito in arrivo</div>
-
-    <p class="contact">
-      Nel frattempo scrivimi:
-      <a href="mailto:info@zerocomplicazioni.it">info@zerocomplicazioni.it</a>
-    </p>
-
-    <footer>© 2026 ZeroComplicazioni</footer>
-
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="wordmark" aria-label="ZeroComplicazioni, home">
+      <span class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZeroComplicazioni"><path d="M 73.641 87.109 A 44 44 0 1 1 93.958 51.919 L 75.975 51.134 A 26 26 0 1 0 63.970 71.928 Z" fill="currentColor"/></svg></span>
+      <span class="word"><span class="zero">Zero</span>Complicazioni</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-burger" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="casi.html">Casi / Demo</a>
+      <a href="contatti.html">Contatti</a>
+    </nav>
   </div>
+</header>
+<main>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZeroComplicazioni"><path d="M 73.641 87.109 A 44 44 0 1 1 93.958 51.919 L 75.975 51.134 A 26 26 0 1 0 63.970 71.928 Z" fill="currentColor"/></svg></div>
+      <h1><span class="zero">Zero</span>Complicazioni</h1>
+      <p class="claim">Togliamo complicazioni a chi gestisce un locale.</p>
+      <p class="lead">Strumenti e consulenza per ristoranti, pizzerie e attività che lavorano con asporto e consegna. Niente software complicato da imparare: soluzioni pensate per chi in cucina o in sala non ha tempo da perdere.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:info@zerocomplicazioni.it">Scrivimi</a>
+        <a class="btn btn-ghost" href="casi.html">Guarda un esempio</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="wrap">
+      <h2 class="section-title section-title-dark">La credenziale</h2>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <svg class="stat-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"   height="512" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M2.5 19h19v2h-19v-2zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10l-6.9-6.43-1.93.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 2.59 4.49L21 11.49c.81-.23 1.28-1.05 1.07-1.85z"></path></svg>
+          <div class="stat-num">24</div>
+          <p class="stat-label">anni di inflight product<br>in compagnia aerea</p>
+        </div>
+        <div class="stat-card">
+          <svg class="stat-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"   height="512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M464 256H48a48 48 0 0 0 0 96h416a48 48 0 0 0 0-96zm16 128H32a16 16 0 0 0-16 16v16a64 64 0 0 0 64 64h352a64 64 0 0 0 64-64v-16a16 16 0 0 0-16-16zM58.64 224h394.72c34.57 0 54.62-43.9 34.82-75.88C448 83.2 359.55 32.1 256 32c-103.54.1-192 51.2-232.18 116.11C4 180.09 24.07 224 58.64 224zM384 112a16 16 0 1 1-16 16 16 16 0 0 1 16-16zM256 80a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm-128 32a16 16 0 1 1-16 16 16 16 0 0 1 16-16z"></path></svg>
+          <div class="stat-num">12</div>
+          <p class="stat-label">anni da responsabile<br>in ristorazione veloce</p>
+        </div>
+      </div>
+      <p class="section-body section-body-dark">Far funzionare cibo preparato in un posto, trasportato e consumato altrove un'ora dopo — con vincoli di costo, spazio e tempo rigidi — è il problema dell'asporto e della consegna. L'ho gestito ogni giorno per 24 anni. Prima ancora, 12 anni a gestire i picchi di sala nel fast food: processi, formazione, throughput. Nessun web designer e nessun consulente locale porta questa combinazione.</p>
+    </div>
+  </section>
+
+  <section class="section section-cream">
+    <div class="wrap">
+      <h2 class="section-title">Tre modi per togliere complicazioni</h2>
+      <p class="section-body">Si comprano insieme o separati, in base a cosa ti sta creando più problemi adesso.</p>
+      <div class="card-grid">
+        <a class="service-card" href="servizi.html#zero-attese">
+          <span class="badge-icon"><svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"   height="512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path></svg></span>
+          <h3>Zero Attese</h3>
+          <p class="eyebrow">Ordini online</p>
+          <p>Il cliente ordina da solo su una pagina web dedicata al tuo locale. L'ordine arriva già scritto su WhatsApp.</p>
+        </a>
+        <a class="service-card" href="servizi.html#zero-intoppi">
+          <span class="badge-icon"><svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"   height="512" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="m20.38 8.57-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44z"></path><path d="M10.59 15.41a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"></path></svg></span>
+          <h3>Zero Intoppi</h3>
+          <p class="eyebrow">Consulenza operativa</p>
+          <p>Processi, timing e organizzazione della cucina perché il servizio non si inceppi nel picco.</p>
+        </a>
+        <a class="service-card" href="servizi.html#zero-sorprese">
+          <span class="badge-icon"><svg class="icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"   height="512" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 2H4c-1 0-2 .9-2 2v3.01c0 .72.43 1.34 1 1.69V20c0 1.1 1.1 2 2 2h14c.9 0 2-.9 2-2V8.7c.57-.35 1-.97 1-1.69V4c0-1.1-1-2-2-2zm-1 18H5V9h14v11zm1-13H4V4h16v3z"></path><path d="M9 12h6v2H9z"></path></svg></span>
+          <h3>Zero Sorprese</h3>
+          <p class="eyebrow">Gestionale food cost</p>
+          <p>Magazzino, consumi teorici vs reali, alert sui materiali critici. A fine mese i margini sono quelli previsti.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">A che punto siamo</h2>
+      <p class="section-body">ZeroComplicazioni è un progetto lanciato nell'estate 2026. Il catalogo è pronto e i primi strumenti sono già al lavoro: un tool ordini è live e operativo per un grossista alimentare locale, un altro è già in valutazione presso il locale a cui è stato consegnato.</p>
+      <div class="legend-row">
+        <span class="legend-item"><span class="status-badge status-live">LIVE</span><span class="legend-text">in uso da un cliente</span></span>
+        <span class="legend-item"><span class="status-badge status-neutral">IN VALUTAZIONE</span><span class="legend-text">il cliente sta decidendo</span></span>
+        <span class="legend-item"><span class="status-badge status-neutral">PRONTO</span><span class="legend-text">non ancora condiviso col cliente</span></span>
+      </div>
+      <a class="btn btn-primary" href="casi.html">Guarda i casi</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ZeroComplicazioni"><path d="M 73.641 87.109 A 44 44 0 1 1 93.958 51.919 L 75.975 51.134 A 26 26 0 1 0 63.970 71.928 Z" fill="currentColor"/></svg></div>
+    <p class="footer-text">© 2026 ZeroComplicazioni — strumenti e consulenza per chi lavora con asporto e consegna.</p>
+    <a class="footer-email" href="mailto:info@zerocomplicazioni.it">info@zerocomplicazioni.it</a>
+  </div>
+</footer>
 </body>
 </html>
