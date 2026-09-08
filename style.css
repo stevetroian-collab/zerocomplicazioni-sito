@@ -1,6 +1,6 @@
 :root {
   --coral: #F27F6B;
-  --terracotta: #B14A2E; /* testo corallo su sfondo chiaro (WCAG AA) — icone/bottoni/badge restano --coral */
+  --terracotta: #B14A2E; /* testo corallo su sfondo chiaro (WCAG AA). Nel lockup simbolo+wordmark: mattone insieme su sfondo chiaro, corallo insieme su sfondo scuro — mai affiancati. Corallo isolato resta su bottoni/badge/superfici */
   --ink: #1E1E1E;
   --card: #2A2A2A;
   --cream: #FDF0D4;
@@ -36,7 +36,7 @@ p { margin: 0; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .wordmark { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.wordmark .mark { width: 28px; height: 28px; color: var(--coral); }
+.wordmark .mark { width: 28px; height: 28px; color: var(--terracotta); }
 .wordmark .mark svg { width: 100%; height: 100%; }
 .wordmark .word { font-size: 19px; font-weight: 600; color: var(--ink); }
 .wordmark .zero { color: var(--terracotta); }
@@ -69,7 +69,7 @@ p { margin: 0; }
 /* ---------- Hero ---------- */
 .hero { background: var(--cream); padding: 88px 0 72px; text-align: center; }
 .hero-inner { max-width: 640px; margin: 0 auto; }
-.hero-mark { width: 64px; height: 64px; margin: 0 auto 28px; color: var(--coral); }
+.hero-mark { width: 64px; height: 64px; margin: 0 auto 28px; color: var(--terracotta); }
 .hero-mark svg { width: 100%; height: 100%; }
 .hero-mark-sm { width: 52px; height: 52px; margin-bottom: 20px; }
 h1 { font-size: clamp(32px, 6vw, 44px); letter-spacing: -0.01em; margin-bottom: 18px; }
@@ -189,7 +189,7 @@ h1 { font-size: clamp(32px, 6vw, 44px); letter-spacing: -0.01em; margin-bottom: 
 /* ---------- Footer ---------- */
 .site-footer { background: var(--cream); border-top: 1px solid var(--border); padding: 40px 0; }
 .footer-inner { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
-.footer-mark { width: 26px; height: 26px; color: var(--coral); }
+.footer-mark { width: 26px; height: 26px; color: var(--terracotta); }
 .footer-mark svg { width: 100%; height: 100%; }
 .footer-text { font-size: 12.5px; color: var(--muted); max-width: 420px; }
 .footer-email { font-size: 13px; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--coral); }
